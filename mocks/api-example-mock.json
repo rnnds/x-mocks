@@ -1,0 +1,8 @@
+{  
+   "uri":"/v1/example",
+   "method":"get",
+   "response":{  
+      "status":200,
+      "body":"It works!"
+   }
+}
