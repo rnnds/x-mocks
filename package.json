@@ -6,6 +6,7 @@
   "dependencies": {
     "koa": "~1.1.2",
     "mocha": "~2.3.4",
+    "mock-fs": "~3.6.0",
     "simple-mock": "~0.5.0"
   },
   "devDependencies": {},
