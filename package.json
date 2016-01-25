@@ -5,7 +5,8 @@
   "main": "app.js",
   "dependencies": {
     "koa": "~1.1.2",
-    "mocha": "~2.3.4"
+    "mocha": "~2.3.4",
+    "simple-mock": "~0.5.0"
   },
   "devDependencies": {},
   "scripts": {
