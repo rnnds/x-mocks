@@ -4,7 +4,8 @@
   "description": "Dynamic multiple mock server",
   "main": "app.js",
   "dependencies": {
-    "koa": "~1.1.2"
+    "koa": "~1.1.2",
+    "mocha": "~2.3.4"
   },
   "devDependencies": {},
   "scripts": {
