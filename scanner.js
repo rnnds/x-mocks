@@ -1,12 +1,13 @@
 var fs = require('fs'),
   route = require('koa-route'),
   _ = require('lodash-node'),
-  mappedRoutes = {};
+  mappedRoutes = {},
+  mocksDirectory = process.argv[2] || 'mocks';
 
-function scan() {
-  var items = fs.readdirSync('mocks');
+function scan(directory) {
+  var items = fs.readdirSync(mocksDirectory);
   _.forEach(items, function(item) {
-    var obj = JSON.parse(fs.readFileSync('mocks/' + item));
+    var obj = JSON.parse(fs.readFileSync(mocksDirectory + '/' + item));
     mappedRoutes[identifier(obj.method, obj.uri)] = obj.response;
     app.use(route[obj.method](obj.uri, show));
     console.info('Registered route: %s', item);

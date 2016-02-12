@@ -1,6 +1,6 @@
 {
   "name": "x-mocks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dynamic multiple mock server",
   "main": "app.js",
   "dependencies": {
@@ -15,6 +15,7 @@
   "scripts": {
     "test": "mocha"
   },
+  "bin" : "bin/x-mocks",
   "author": "Ronan Silva",
   "license": "BSD-2-Clause"
 }
