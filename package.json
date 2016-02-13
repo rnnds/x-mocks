@@ -1,6 +1,6 @@
 {
   "name": "x-mocks",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Dynamic multiple mock server",
   "main": "app.js",
   "dependencies": {
