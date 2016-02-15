@@ -1,0 +1,8 @@
+{  
+   "uri":"/v1/example",
+   "method":"post",
+   "response":{  
+      "status":201,
+      "body":"{'created':true}"
+   }
+}

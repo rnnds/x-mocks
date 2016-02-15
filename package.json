@@ -1,6 +1,6 @@
 {
   "name": "x-mocks",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Dynamic multiple mock server",
   "main": "app.js",
   "dependencies": {
@@ -15,7 +15,13 @@
   "scripts": {
     "test": "mocha"
   },
-  "bin" : "bin/x-mocks",
-  "author": "Ronan Silva",
-  "license": "BSD-2-Clause"
+  "bin": "bin/x-mocks",
+  "author": "Ronan Silva <ronan.ads@gmail.com>",
+  "license": "BSD-2-Clause",
+  "homepage": "https://github.com/rnnds/x-mocks",
+  "keywords": [
+    "mock",
+    "server",
+    "json"
+  ]
 }
