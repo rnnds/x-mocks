@@ -2,13 +2,13 @@ var assert = require('assert'),
   mock = require('mock-fs'),
   simple = require('simple-mock'),
   app = require('koa'),
-  scanner = require('.././scanner.js')(app);
+  scanner = require('../lib/scanner.js')(app);
 
 describe('Scanner', function() {
   describe('scan', function() {
     it('should read files and register its route', function() {
       mock({
-        'mocks': {
+        '../mocks': {
           'get.json': '{"uri":"list","method":"get","response":{"status":200,"body":"Ok"}}',
           'put.json': '{"uri":"add","method":"post","response":{"status":201,"body":"Created"}}'
         }
