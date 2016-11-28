@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 
 var koa = require('koa'),
+  cors  = require('koa-cors'),
   route = require('koa-route'),
   app = module.exports = koa(),
   scanner = require('../lib/scanner.js')(app);
+
+app.use(cors());
 
 app.use(route.get('/routes', function*() {
   this.body = JSON.stringify(scanner.routes);
